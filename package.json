@@ -1,0 +1,48 @@
+{
+  "name": "@rawsemble/bloom",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Runtime registry API for es modules",
+  "main": "dist/bloom.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "test": "cypress open",
+    "test:ci": "cypress run",
+    "lint": "eslint src --ext ts",
+    "format": "prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && pnpm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawsemble/bloom.git"
+  },
+  "keywords": [
+    "es",
+    "module",
+    "registry"
+  ],
+  "author": "Joel Denning",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/rawsemble/bloom/issues"
+  },
+  "homepage": "https://github.com/rawsemble/bloom#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "cypress": "^6.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-ts-important-stuff": "^1.1.0",
+    "husky": "^4.3.6",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3"
+  }
+}

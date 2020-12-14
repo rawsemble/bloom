@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["dom"],
+    "outDir": "dist",
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "declaration": true,
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "types": ["cypress"]
+  },
+  "files": ["src/bloom"]
+}
